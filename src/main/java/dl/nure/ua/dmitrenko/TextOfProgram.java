@@ -23,11 +23,11 @@ public class TextOfProgram {
                 System.out.println("Чи хочете Ви щоб програма показала, що вона сховала?  +/-");
                 String answer2 = scanner.next();
                 switch (answer2) {
-                    case "+":
+                    case "+", "так":
                         String extractedMessage = readSecretMessage.extractHiddenMessage("out.wav");
                         stringBuilder1.append("Extracted Message: ").append(extractedMessage);
                         break;
-                    case "-":
+                    case "-", "ні":
                         stringBuilder1.append("Програма завершена!");
                         break;
                     default:
